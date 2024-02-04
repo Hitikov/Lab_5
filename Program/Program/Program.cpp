@@ -7,8 +7,8 @@ using namespace std;
 int min_value(int m[100][100], int n)
 {
 	int mv = m[0][0];
-	for (int i = 0; i < n; ++i){
-		if (m[i][i] < mv){
+	for (int i = 0; i < n; ++i) {
+		if (m[i][i] < mv) {
 			mv = m[i][i];
 		}
 	}
@@ -89,6 +89,6 @@ int main() {
 	cout << endl;
 
 	cout << "Количество элементов удовлетворяющих условию: " << value_count(mtr, n, min_value(mtr, n));
-	
-	return 0;	
+
+	return 0;
 }
